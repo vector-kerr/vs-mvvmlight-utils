@@ -3,3 +3,18 @@
 The files in this directory are Visual Studio "intellisense snippets."
 
 To use these snippets in your copy of Visual Studio, copy them into the `VC#\Snippets\1033\Visual C#` folder under your Visual Studio directory, or add it using the Code Snippets Manager (**Ctrl+K, Ctrl+B**).
+
+
+## `mvlprop` (MVVM Light Property)
+
+For use with an `ObservaleObject`, this code snippet creates a Property (including a corresponding private member) including a setter which calls the `Set` method.
+
+```c#
+private int myVar;
+
+public int MyProperty
+{
+  get { return myVar; }
+  set { Set<int>(() => this.myVar, ref myVar, value); }
+}
+```
