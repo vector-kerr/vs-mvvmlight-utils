@@ -9,6 +9,13 @@ To use these snippets in your copy of Visual Studio, copy them into the `VC#\Sni
 
 For use with an `ObservaleObject`, this code snippet creates a Property (including a corresponding private member) including a setter which calls the `Set` method.
 
+### Compatibility
+`C#`
+
+### Usage
+`mvlprop <TAB> <TAB>`
+
+### Example
 ```c#
 private int myVar;
 
