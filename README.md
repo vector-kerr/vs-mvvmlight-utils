@@ -3,6 +3,6 @@
 Visual Studio Utilities for use with the MVVM Light Toolkit
 
 
-## `/snippets`
+## `/src/snippets`
 
 Contains "intellisense snippets" to make MVVM Light programming more efficient.
