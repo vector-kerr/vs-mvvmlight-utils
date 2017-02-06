@@ -17,11 +17,32 @@ For use with an `ObservaleObject`, this code snippet creates a Property (includi
 
 ### Example
 ```c#
-private int myVar;
+private int mProperty;
 
-public int MyProperty
+public int Property
 {
-  get { return myVar; }
-  set { Set<int>(() => this.myVar, ref myVar, value); }
+  get { return mProperty; }
+  set { Set<int>(() => this.mProperty, ref mProperty, value); }
+}
+```
+
+
+## `mvlpropc` (MVVM Light Collection Property)
+
+For use with an `ObservaleObject`, this code snippet creates an `ObservableCollection<T>` Property (including a corresponding private member).
+
+### Compatibility
+`C#`
+
+### Usage
+`mvlprop <TAB> <TAB>`
+
+### Example
+```c#
+private ObservableCollection<int> mProperty = new ObservableCollection<int>();
+
+public int Property
+{
+  get { return mProperty; }
 }
 ```
