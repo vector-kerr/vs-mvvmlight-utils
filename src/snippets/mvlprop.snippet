@@ -22,19 +22,17 @@
 					<ToolTip>Property name</ToolTip>
 					<Default>MyProperty</Default>
 				</Literal>
-				<Literal>
-					<ID>field</ID>
-					<ToolTip>The variable backing this property</ToolTip>
-					<Default>myVar</Default>
-				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[private $type$ $field$;
+			<Code Language="csharp"><![CDATA[private $type$ m$Property$;
 
 	public $type$ $property$
 	{
-		get { return $field$;}
-		set { Set<$type$>(() => this.$field$, ref $field$, value); }
+		get { return m$Property$;}
+		set { Set<$type$>(() => this.m$Property$, ref m$Property$, value); }
 	}
+	
+	// -----------------------------------------------------------------------------------------
+	
 	$end$]]>
 			</Code>
 		</Snippet>
