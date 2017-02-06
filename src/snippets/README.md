@@ -29,19 +29,19 @@ public int Property
 
 ## `mvlpropc` (MVVM Light Collection Property)
 
-For use with an `ObservaleObject`, this code snippet creates an `ObservableCollection<T>` Property (including a corresponding private member).
+This code snippet creates an `ObservableCollection<T>` Property (including a corresponding private member) with a public getter and no setter.
 
 ### Compatibility
 `C#`
 
 ### Usage
-`mvlprop <TAB> <TAB>`
+`mvlpropc <TAB> <TAB>`
 
 ### Example
 ```c#
 private ObservableCollection<int> mProperty = new ObservableCollection<int>();
 
-public int Property
+public ObservableCollection<int> Property
 {
   get { return mProperty; }
 }
