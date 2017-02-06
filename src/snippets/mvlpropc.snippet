@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>mvlpropc</Title>
+			<Shortcut>mvlpropc</Shortcut>
+			<Description>MVVMLite Property (Collection) Definition</Description>
+			<Author>Daniel 'Vector' Kerr &lt;vector.kerr@gmail.com&gt;</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>Property name</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[private ObservableCollection<$type$> m$property$ = new ObservableCollection<$type$>();
+
+	public ObservableCollection<$type$> $property$
+	{
+		get { return m$Property$; }
+	}
+	
+	// -----------------------------------------------------------------------------------------
+	
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
